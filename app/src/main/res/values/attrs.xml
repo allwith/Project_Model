@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CountdownView">
+        <attr name="isHideTimeBackground" format="boolean"/>
+        <attr name="isShowTimeBgDivisionLine" format="boolean"/>
+        <attr name="timeBgDivisionLineColor" format="color"/>
+        <attr name="timeBgDivisionLineSize" format="dimension"/>
+        <attr name="timeBgColor" format="color"/>
+        <attr name="timeBgSize" format="dimension"/>
+        <attr name="timeBgRadius" format="dimension"/>
+
+        <attr name="isTimeTextBold" format="boolean"/>
+        <attr name="timeTextSize" format="dimension"/>
+        <attr name="timeTextColor" format="color"/>
+        <attr name="isShowDay" format="boolean"/>
+        <attr name="isShowHour" format="boolean"/>
+        <attr name="isShowMinute" format="boolean"/>
+        <attr name="isShowSecond" format="boolean"/>
+        <attr name="isShowMillisecond" format="boolean"/>
+
+        <attr name="isSuffixTextBold" format="boolean"/>
+        <attr name="suffixTextSize" format="dimension"/>
+        <attr name="suffixTextColor" format="color"/>
+        <attr name="suffix" format="string"/>
+        <attr name="suffixDay" format="string"/>
+        <attr name="suffixHour" format="string"/>
+        <attr name="suffixMinute" format="string"/>
+        <attr name="suffixSecond" format="string"/>
+        <attr name="suffixMillisecond" format="string"/>
+        <attr name="suffixGravity">
+            <enum name="top" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+        <attr name="suffixLRMargin" format="dimension"/>
+        <attr name="suffixDayLeftMargin" format="dimension"/>
+        <attr name="suffixDayRightMargin" format="dimension"/>
+        <attr name="suffixHourLeftMargin" format="dimension"/>
+        <attr name="suffixHourRightMargin" format="dimension"/>
+        <attr name="suffixMinuteLeftMargin" format="dimension"/>
+        <attr name="suffixMinuteRightMargin" format="dimension"/>
+        <attr name="suffixSecondLeftMargin" format="dimension"/>
+        <attr name="suffixSecondRightMargin" format="dimension"/>
+        <attr name="suffixMillisecondLeftMargin" format="dimension"/>
+
+
+        <!--dragtop-->
+        <!--Set the collapse panel offset-->
+        <attr name="dtlCollapseOffset" format="dimension"/>
+
+        <!--Set enable drag over.The default value is true.-->
+        <attr name="dtlOverDrag" format="boolean"/>
+
+        <!--Open the top view after the drag layout is created. The default value is false.-->
+        <attr name="dtlOpen" format="boolean"/>
+
+        <!-- The id of the top view (which will be dragged) -->
+        <attr name="dtlTopView" format="reference"/>
+
+        <!-- The content view which will be dragged together with "dtlTopView" -->
+        <attr name="dtlDragContentView" format="reference"/>
+
+        <!-- True the top view can be dragged -->
+        <attr name="dtlCaptureTop" format="boolean"/>
+
+
+    </declare-styleable>
+
+    <!--network-->
+    <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"></attr>
+        <attr name="bmHeight" format="dimension"></attr>
+    </declare-styleable>
+    <!--network end -->
+
+    <!--圆形进度条-->
+    <declare-styleable name="CircleTextProgressbar">
+        <attr name="in_circle_color" format="color"/>
+    </declare-styleable>
+    <!--圆形进度条end-->
+
+
+    <!--自定义分割的edittext-->
+
+    <declare-styleable name="XEditText">
+        <attr name="x_separator" format="string"/>
+        <attr name="x_customizeMarkerEnable" format="boolean"/>
+        <attr name="x_iOSStyleEnable" format="boolean"/>
+        <attr name="x_disableEmoji" format="boolean"/>
+        <attr name="x_showMarkerTime">
+            <enum name="after_input" value="0"/>
+            <enum name="before_input" value="1"/>
+            <enum name="always" value="2"/>
+        </attr>
+    </declare-styleable>
+    <!--edittext end-->
+
+
+    <!--likebutton-->
+    <declare-styleable name="LikeButton">
+        <attr name="icon_type" format="string"/>
+        <attr name="icon_size" format="dimension|reference"/>
+        <attr name="like_drawable" format="reference"/>
+        <attr name="unlike_drawable" format="reference"/>
+        <attr name="dots_primary_color" format="color|reference"/>
+        <attr name="dots_secondary_color" format="color|reference"/>
+        <attr name="circle_start_color" format="color|reference"/>
+        <attr name="circle_end_color" format="color|reference"/>
+        <attr name="liked" format="boolean"/>
+    </declare-styleable>
+    <!-- likebutton   end-->
+
+
+    <!-- 自定义类似radiobutton 的view   SegmentControl -->
+    <declare-styleable name="SegmentControl">
+        <attr name="cornerRadius" format="dimension|reference"/>
+        <attr name="normalColor" format="color|reference"/>
+        <attr name="selectedColor" format="color|reference"/>
+        <attr name="backgroundColors" format="color|reference"/>
+        <attr name="textColors" format="color|reference"/>
+        <attr name="texts" format="string|reference"/>
+        <attr name="android:textSize"/>
+        <attr name="android:orientation"/>
+        <!-- 外部边框的width -->
+        <attr name="boundWidth" format="dimension|reference"/>
+        <!-- 内部边框的width -->
+        <attr name="separatorWidth" format="dimension|reference"/>
+        <attr name="gaps" format="dimension|reference"/>
+        <attr name="horizonGap" format="dimension|reference"/>
+        <attr name="verticalGap" format="dimension|reference"/>
+    </declare-styleable>
+    <!-- SegmentControl  end-->
+
+
+    <!-- 闪烁的textview-->
+    <declare-styleable name="ShimmerView">
+        <attr name="reflectionColor" format="color"/>
+    </declare-styleable>
+
+    <!--checkbox-->
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="duration" format="integer"/>
+        <attr name="stroke_width" format="dimension"/>
+        <attr name="color_tick" format="color"/>
+        <attr name="color_checked" format="color"/>
+        <attr name="color_unchecked" format="color"/>
+        <attr name="color_unchecked_stroke" format="color"/>
+    </declare-styleable>
+
+
+
+    <!-- 仿 58 跳跳 加载动画-->
+    <declare-styleable name="MyLoadingView">
+
+        <attr name="loadingText" format="string"/>
+        <attr name="loadingTextAppearance" format="reference"/>
+    </declare-styleable>
+
+
+    <!--刻度尺 -->
+    <string-array name="demo_data">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>11</item>
+        <item>13</item>
+        <item>19</item>
+        <item>30</item>
+        <item>46</item>
+        <item>90</item>
+        <item>104</item>
+        <item>247</item>
+        <item>422</item>
+        <item>500</item>
+    </string-array>
+    <!-- 刻度尺 end-->
+
+</resources>

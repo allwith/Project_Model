@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ruanmeng.project_model.gitview.myprogress.MyTestProgress">
+
+    <Button
+        android:id="@+id/btn_add"
+        android:text="+"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/pb_vertical_simple_shape"
+        android:layout_width="20dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progress="70"
+        android:progressDrawable="@drawable/progress2"/>
+    <Button
+        android:id="@+id/btn_sub"
+        android:text="-"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:text="---------------------------------------------------------------------------------------"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_my_add"
+        android:text="+"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/pb_myview"
+        android:layout_width="20dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progress="70"
+        android:progressDrawable="@drawable/progress_vertical_gradient_simple_shape"/>
+    <Button
+        android:id="@+id/btn_my_sub"
+        android:text="-"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

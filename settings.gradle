@@ -1,0 +1,1 @@
+include ':app', ':ImageSeletor', ':nohttp', ':WheelView', ':CalendarView', ':FlycoDialog_Lib', ':ZoomView', ':SwipLayout', ':xrecyclerview', ':indexablelistview', ':segmentcontrol', ':animators', ':magicindicator', ':Rulberview'

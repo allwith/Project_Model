@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/login_touxiang_x2"/>
+
+
+        <LinearLayout
+            android:id="@+id/lay_acc_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/divider"/>
+
+            <EditText
+                android:id="@+id/et_login_name"
+                style="@style/Font13_black"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/white"
+                android:drawableLeft="@drawable/shouji"
+                android:drawablePadding="10dp"
+                android:hint="请输入用户名/手机号码"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="10dp"
+                android:singleLine="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/divider"/>
+
+
+            <EditText
+                android:id="@+id/et_login_pwd"
+                style="@style/Font13_black"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/white"
+                android:drawableLeft="@drawable/suo"
+                android:drawablePadding="10dp"
+                android:hint="请输入登录密码"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:paddingLeft="10dp"
+                android:singleLine="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/divider"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_login_denglu"
+            style="@style/Font15_white"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rec_bg_blue"
+            android:onClick="doClick"
+            android:text="登录"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_login_forget"
+                style="@style/Font13_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:onClick="doClick"
+                android:padding="10dp"
+                android:text="忘记密码？"/>
+
+            <TextView
+                android:id="@+id/tv_login_signup"
+                style="@style/Font13_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="doClick"
+                android:padding="10dp"
+
+                android:text="免费注册"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

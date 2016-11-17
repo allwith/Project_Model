@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_selector"
+    android:padding="10dp"
+    android:orientation="horizontal" >
+    
+    
+    
+    
+    <ImageView 
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/gw_02"
+        android:button="@null"
+        android:id="@+id/ck_is"
+        android:layout_gravity="center_vertical"
+        />
+    
+    
+    
+    <ImageView 
+         android:layout_marginLeft="5dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/img_head"
+        android:background="@drawable/ic_launcher"
+         android:layout_gravity="center_vertical"
+        />
+    
+    
+    <LinearLayout 
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:id="@+id/tv_name"
+           
+            />
+         <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:id="@+id/tv_canshu"
+            
+            />
+        
+         
+         
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+             <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_price"
+           
+            
+            />
+             
+                <TextView 
+                    android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_price1"
+            
+            />
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+             <LinearLayout 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+                 <Button 
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:text="-"
+                android:id="@+id/btn_jian"
+                android:background="@drawable/box_01"
+                android:layout_gravity="center_vertical"
+                />
+               <EditText 
+                   android:layout_width="30dp"
+                   android:layout_height="25dp"
+                  
+                   android:gravity="center"
+                   android:id="@+id/et_num"
+                    android:background="@drawable/box_02"
+                     android:layout_gravity="center_vertical"
+                     android:focusable="false"
+                   />
+            <Button 
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:text="+"
+                 android:id="@+id/btn_jia"
+                  android:background="@drawable/box_03"
+                   android:layout_gravity="center_vertical"
+                />
+            </LinearLayout>
+                
+                
+        </LinearLayout> 
+         
+         
+         
+    </LinearLayout>
+    
+    
+    
+
+    
+    
+    
+</LinearLayout>

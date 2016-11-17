@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ app:cardCornerRadius=”4dp” 表示卡片的弧度.
+ app:cardElevation=”4dp” 表示阴影的深度.
+ android:foreground=”?attr/selectableItemBackground” 波纹型选中效果
+ -->
+<com.daimajia.swipe.SwipeLayout
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mytext_swip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    app:clickToClose="true"
+    >
+
+    <!-- 先放右边的布局  侧滑的
+     然后才是 主布局-->
+    <LinearLayout
+        android:id="@+id/lay_ringht_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_sliding_love"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_click_red_havebackground"
+            android:gravity="center"
+            android:text="收 藏"
+            android:textColor="#DDFFFFFF"/>
+
+        <TextView
+            android:id="@+id/item_sliding_delete"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_click_red_havebackground"
+            android:gravity="center"
+            android:text="删 除"
+            android:textColor="#DDFFFFFF"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_item_nohttp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/Padding_LR"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/Font_Nomal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    style="@style/Smail_Nomal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                style="@style/Smail_Nomal"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:textColor="#999999"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.daimajia.swipe.SwipeLayout>

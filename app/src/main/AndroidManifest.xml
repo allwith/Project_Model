@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.ruanmeng.project_model">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- 百度地图权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <application
+        android:name="com.ruanmeng.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 百度地图 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="aY19Mq9h588yWKx5xxA4PO4z877XQcjM"/>
+        <!-- http://lbsyun.baidu.com/apiconsole/key -->
+
+
+        <!-- 高德地图 -->
+        <!-- 设置key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="aY19Mq9h588yWKx5xxA4PO4z877XQcjM"/>
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService"/>
+
+        <activity android:name=".register.LoginActivity"/>
+        <activity android:name=".register.RegisterActivity"/>
+        <activity android:name=".register.ForgetActivity"/>
+        <activity android:name=".imageselector.ApplyActivity"/>
+        <activity android:name=".cityselector.AreaActivity"/>
+        <activity android:name=".cityselector.sort.CityActivity"/>
+        <activity android:name=".cityselector.QuActivity"/>
+        <activity android:name=".cityselector.SelectActivity"/>
+        <activity android:name=".orderlist.OrderActivity"/>
+        <activity android:name=".calendar.Calendar1Activity"/>
+        <activity android:name=".calendar.Calendar2Activity"/>
+        <activity android:name=".calendar.Calendar3Activity"/>
+        <activity android:name=".calendar.CalendarActivity"/>
+        <activity android:name=".report.ReportActivity"/>
+        <activity android:name=".shopping.ChuiZhiShoppingActivity"/>
+        <activity android:name=".shopping.RuZhuShoppingActivity"/>
+        <activity android:name=".shopping.ShopActivity"/>
+        <activity android:name=".Refresh.NewsActivity"/>
+        <activity android:name="com.ruanmeng.Dialog.DialogHomeActivity"/>
+        <activity android:name=".lunbo.LunboActivity"/>
+        <activity android:name=".Timer.TimerActivity"/>
+
+        <!-- dragtop -->
+
+        <activity android:name=".DragTopLayout.AboutActivity"/>
+        <activity android:name=".DragTopLayout.PullToRefreshActivity"/>
+        <activity android:name=".DragTopLayout.DragTopActivity"/>
+
+        <!-- transparenttoolbar -->
+
+        <activity android:name=".TransparentToolbar.TransParentToolbarActivity"/>
+
+        <!-- scrollviewheader -->
+
+        <activity
+            android:name=".ScrollViewHeader.ScrollviewHeaderActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <!-- tablelayout -->
+
+        <activity android:name=".TableLayout.TableLayoutActivity"/>
+        <activity
+            android:name=".TableLayout.TablayoutActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 侧滑删除 -->
+        <activity android:name=".CeHuaShanChu.DefineSlidingDeleteActivity"/>
+        <activity android:name=".lunbo.PictureLunBoActivity"/>
+        <activity android:name=".lunbo.WuXianLunBoActivity"/>
+        keytool -v -list -keystore keystore.jks
+        <!-- 上传头像 -->
+        <activity android:name=".UpLoadPic.JGHeadImgActivity"/>
+
+        <!-- 百度地图 -->
+        <activity android:name=".Map.MapActivity"/>
+        <activity android:name=".Map.LocationFilter"/>
+
+        <!-- 高德地图 -->
+        <activity
+            android:name=".GaoDeMap.Location_Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".mynohttp.Activity_MyNoHttp"/>
+
+        <!-- 异常捕获 -->
+        <activity android:name=".mycrash.ErrorActivity"/>
+        <!-- 异常捕获  end -->
+
+
+        <!-- 网络监听 -->
+        <activity android:name=".mynetwork.Activity_NetText1">
+        </activity>
+        <activity android:name=".mynetwork.Activity_NetText2">
+        </activity>
+        <activity android:name=".mynetwork.NetWorkActivity"/>
+        <!-- 网络监听  end -->
+        <activity android:name=".myzoomview.Text_ZoomActivity">
+        </activity>
+        <activity android:name=".guide.Guide_Activity">
+        </activity>
+        <activity android:name=".guide.demo.Demo_Activity">
+        </activity>
+        <activity android:name=".myedittext.MyEdittext_Activity">
+        </activity>
+        <activity android:name=".likebutton.Activity_LikeButton">
+        </activity>
+        <activity android:name=".mynohttp.mycardview.cv_demo.Activity_CardView">
+        </activity>
+        <activity
+            android:name=".slideback.Activity_TextBack"
+            android:theme="@style/ThemeSwipeBack">
+        </activity>
+        <activity
+            android:name=".slideback.Activity_TextBack2"
+            android:theme="@style/ThemeSwipeBack">
+        </activity>
+        <activity android:name=".mynohttp.myrecyclerview.Activity_BgaRecyclerview">
+        </activity>
+        <activity android:name=".mynohttp.myxrev.Activity_XRecyclerview">
+        </activity>
+        <activity android:name=".mycitylist.ui.MyCityList">
+        </activity>
+        <activity android:name=".mylockview.myui.MyDetailsView">
+        </activity>
+        <activity android:name=".mylockview.myui.MyForget_activity">
+        </activity>
+        <activity android:name=".mylockview.myui.MyOperation_Activity">
+        </activity>
+        <activity
+            android:name=".mylockview.myui.MyFail_Activity"
+            android:theme="@android:style/Theme.Translucent">
+        </activity>
+        <!-- android:theme="@style/myTheme" -->
+        <!-- android:theme="@android:style/Theme.Translucent" -->
+        <activity android:name=".mylockview.lockui.GestureVerifyActivity"/>
+        <activity android:name=".mylockview.lockui.GestureEditActivity"/>
+        <activity android:name=".myselectview.myui.Activity_MySelect">
+        </activity>
+        <activity android:name=".gitview.myprogress.MyTestProgress">
+        </activity>
+        <activity android:name=".gitview.MyGitVIew">
+        </activity>
+        <activity android:name=".myrecyclerview.ui.MyRecyclerView">
+        </activity>
+        <activity android:name=".gitview.myflashtv.MyFlashTextView">
+        </activity>
+        <activity android:name=".ViewPager.myui.MyViewpager">
+        </activity>
+        <activity android:name=".gitview.mycheckbox.MyCheckBox">
+        </activity>
+        <activity android:name=".MyLoadingView.MyLoadingView">
+        </activity>
+        <activity android:name=".MyLoadingView.MyLoadViw2">
+        </activity>
+        <activity android:name=".gitview.myRulerview.RulerView_Activity">
+        </activity>
+    </application>
+
+</manifest>

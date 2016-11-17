@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.ruanmeng.project_model.mylockview.myui.MyDetailsView">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="详情页"/>
+
+    <Button
+        android:id="@+id/btn_show"
+        android:onClick="DoMyClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点点点"/>
+</LinearLayout>

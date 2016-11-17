@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <CheckBox
+            android:id="@+id/ck_item_myShoppingCar_smlv_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/rb_myshoppingcar_selectall_selector"
+            android:button="@null" />
+
+        <ImageView
+            android:id="@+id/iv_item_myShoppingCar_smlv_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_item_myShoppingCar_smlv_name"
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="凯立德5英寸高清汽车GPS导航仪" />
+            
+            
+  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/tv_item_myShoppingCar_smlv_price"
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥599.00"
+                 />
+            <TextView
+                android:id="@+id/iv_item_myShoppingCar_smlv_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                
+                android:text="运费"
+                 />
+        </LinearLayout>
+        </LinearLayout>
+
+        
+		<LinearLayout 
+	    android:id="@+id/ll_item_myShoppingCar_smlv_number"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    >
+	    <TextView 
+	    android:id="@+id/btn_item_myShoppingCar_smlv_jian"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:background="@drawable/shopping_jian"
+	        android:focusable="false"
+	        />
+	    <TextView 
+	    android:id="@+id/iv_item_myShoppingCar_smlv_number"
+	        android:layout_width="40dp"
+	        android:layout_height="25dp"
+	        android:text="100"
+	        
+	        android:gravity="center"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        />
+	    <TextView 
+	    android:id="@+id/btn_item_myShoppingCar_smlv_jia"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:background="@drawable/shopp_jia"
+	        android:focusable="false"
+	        />
+	    
+	</LinearLayout>  
+	
+    </LinearLayout>
+
+      <LinearLayout
+            android:id="@+id/ll_item_myShoppingCar_smlv_number1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="bottom|right"
+            android:visibility="gone"
+            android:orientation="vertical" >
+			
+            
+            <TextView
+                android:id="@+id/iv_item_myShoppingCar_smlv_number1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                
+                android:text="x1"
+                android:focusable="false" />
+        </LinearLayout>       
+    <!-- 左滑显示删除按钮 -->
+
+    <Button
+        android:id="@+id/btn_item_myShoppingCar_smlv_delete"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="#FF3300"
+        android:text="删除"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</LinearLayout>

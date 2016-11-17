@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.ruanmeng.project_model.gitview.mycheckbox.MyCheckBox">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="结果"/>
+
+
+    <!-- 未选择的状态  app:color_unchecked="@color/App_Zi"-->
+    <!--  选择的时候中间对号的颜色  app:color_tick="@color/App_Zi"-->
+    <!--  未选择的时候 圆环的颜色  app:color_unchecked_stroke="@color/App_Zi"-->
+    <com.ruanmeng.project_model.gitview.mycheckbox.views.SmoothCheckBox
+        android:id="@+id/my_checkbox"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="20dp"
+        app:color_checked="@color/my_test"
+        app:color_unchecked_stroke="@color/App_Zi"
+        />
+
+    <com.ruanmeng.project_model.gitview.mycheckbox.views.SmoothCheckBox
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="20dp"
+        app:color_checked="@color/my_test"
+        app:color_unchecked_stroke="@color/App_Zi"
+        />
+
+    <com.ruanmeng.project_model.gitview.mycheckbox.views.SmoothCheckBox
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="20dp"
+        app:color_checked="@color/my_test"
+        app:color_unchecked_stroke="@color/App_Zi"
+        />
+
+</LinearLayout>

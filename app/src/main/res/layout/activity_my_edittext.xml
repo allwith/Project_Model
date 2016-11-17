@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp"
+    tools:context="com.ruanmeng.project_model.myedittext.MyEdittext_Activity">
+
+    <com.ruanmeng.project_model.myedittext.view.XEditText
+
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入电话号"/>
+
+    <TextView
+        android:id="@+id/tv_show_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="电话"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#8ee5ee"></TextView>
+
+    <com.ruanmeng.project_model.myedittext.view.XEditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edit_money"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入银行卡号"/>
+
+    <TextView
+        android:id="@+id/tv_show_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="银行卡"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#8ee5ee"></TextView>
+
+    <com.ruanmeng.project_model.myedittext.view.XEditText
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/edit_idcard"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入身份证号"/>
+
+    <TextView
+        android:id="@+id/tv_show_idcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="身份证号"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#8ee5ee"></TextView>
+
+<com.ruanmeng.project_model.myedittext.view.AnFQNumEditText
+    android:layout_marginTop="20dp"
+    android:id="@+id/edit_autonums"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</com.ruanmeng.project_model.myedittext.view.AnFQNumEditText>
+   <!-- <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/txt_lab"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/txt_lab_msg"
+        >
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/acet_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+-->
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"/>
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.ruanmeng.project_model.myselectview.myui.Activity_MySelect">
+
+
+    <!--selectedColor 选中的颜色-->
+    <!--normalColor  正常颜色-->
+    <!--cornerRadius  边角弧度-->
+    <!--horizonGap  条目宽度-->
+    <!--verticalGap 条目 高度-->
+    <!--textColors  字体颜色-->
+    <!--backgroundColors 背景颜色-->
+    <!--separatorWidth 分隔符宽度-->
+    <!--boundWidth  边框宽度 -->
+
+    <com.ruanmeng.project_model.myselectview.customui.SegmentControl
+
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/myselectview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:textSize="13sp"
+        app:cornerRadius="5dp"
+        app:horizonGap="8dp"
+        app:normalColor="#FFFFFF"
+        app:selectedColor="#0099CC"
+        app:texts="1|2|3|4|5"
+        app:verticalGap="8dp"
+        />
+
+    <com.ruanmeng.project_model.myselectview.customui.SegmentControl
+        android:id="@+id/myselectview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:textSize="13sp"
+
+        app:backgroundColors="@color/possible_result_points"
+
+        app:boundWidth="5dp"
+        app:cornerRadius="5dp"
+        app:horizonGap="18dp"
+        app:normalColor="#FFFFFF"
+        app:selectedColor="#0099CC"
+        app:separatorWidth="1dp"
+        app:textColors="@color/text_color"
+        app:texts="1|2|3|4|5"
+        app:verticalGap="8dp"
+
+        />
+</LinearLayout>

@@ -1,0 +1,94 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="toolbar_padding_top">0dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+    <dimen name="line_height">45dp</dimen>
+    <dimen name="btn_height">35dp</dimen>
+    <dimen name="margin_left_right">10dp</dimen>
+
+    <!--高德地图-->
+    <dimen name="title_text_size">15sp</dimen>
+    <dimen name="city_name_size">20sp</dimen>
+    <dimen name="city_size_size">12sp</dimen>
+    <dimen name="city_progress_size">11sp</dimen>
+    <dimen name="normal_margin">10dp</dimen>
+    <dimen name="font_58">29dp</dimen>
+    <dimen name="font_170">85dp</dimen>
+
+    <dimen name="offline_down_title_hight">25dp</dimen>
+    <dimen name="font_22">11sp</dimen>
+    <dimen name="font_24">12sp</dimen>
+    <dimen name="font_26">13sp</dimen>
+    <dimen name="font_28">14sp</dimen>
+    <dimen name="font_30">15sp</dimen>
+    <dimen name="font_32">16sp</dimen>
+    <dimen name="font_34">17sp</dimen>
+    <dimen name="font_36">18sp</dimen>
+
+    <dimen name="poi_title_size">20sp</dimen>
+    <dimen name="poi_field_size">16sp</dimen>
+    <dimen name="margin_left">15dp</dimen>
+    <dimen name="margin_right">15dp</dimen>
+    <dimen name="margin_middle">2dp</dimen>
+
+    <!--歌匣子-->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <dimen name="Title_Height">45dp</dimen>
+    <dimen name="Line_Height">40dp</dimen>
+
+    <dimen name="Line_Entry_Height">50dp</dimen>
+
+    <dimen name="Icon_Height">25dp</dimen>
+
+
+    <dimen name="Foot_Icon">30dp</dimen>
+
+    <dimen name="Head_Img">150dp</dimen>
+
+    <dimen name="Padding_LR">10dp</dimen>
+
+    <dimen name="BJ_WH">50dp</dimen>
+
+
+    <dimen name="SY_W">90dp</dimen>
+    <dimen name="SY_H">54dp</dimen>
+    <dimen name="Radio_H">40dp</dimen>
+
+
+    <!-- 类型高宽 -->
+    <dimen name="Product_Type_W">96dp</dimen>
+    <dimen name="Product_Type_H">60dp</dimen>
+
+    <!-- 门店高宽 -->
+    <dimen name="Product_Shop_W">96dp</dimen>
+    <dimen name="Product_Shop_H">76.8dp</dimen>
+
+    <!-- 商品高宽 -->
+    <dimen name="Product_W">96dp</dimen>
+    <dimen name="Product_H">72dp</dimen>
+
+    <!-- 展会高宽 -->
+    <dimen name="ZhanHui_H">193dp</dimen>
+
+
+    <!-- 资讯高宽 -->
+    <dimen name="News_W">96dp</dimen>
+    <dimen name="News_H">63dp</dimen>
+
+    <!-- 箭头 -->
+    <dimen name="JT_WH">15dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!--异常捕获-->
+    <dimen name="customactivityoncrash_activity_horizontal_margin">16dp</dimen>
+    <dimen name="customactivityoncrash_activity_vertical_margin">16dp</dimen>
+    <dimen name="customactivityoncrash_error_activity_error_details_text_size">12sp</dimen>
+    <!--end-->
+
+</resources>

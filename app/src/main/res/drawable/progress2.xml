@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <shape>
+            <!--<corners android:radius="5dip" />-->
+            <gradient
+                android:angle="270"
+                android:centerColor="#ff9d9e9d"
+                android:centerY="0.75"
+
+                android:endColor="#ff9d9e9d"
+                android:startColor="#ff9d9e9d" />
+        </shape>
+    </item>
+
+    <!--<item android:id="@android:id/secondaryProgress">-->
+        <!--<clip-->
+            <!--android:clipOrientation="vertical"-->
+            <!--android:gravity="bottom">-->
+            <!--<shape>-->
+                <!--&lt;!&ndash;<corners android:radius="5dip" />&ndash;&gt;-->
+                <!--<gradient-->
+                    <!--android:angle="90"-->
+                    <!--android:endColor="#80ffd300"-->
+                    <!--android:startColor="#80ffd300" />-->
+            <!--</shape>-->
+        <!--</clip>-->
+    <!--</item>-->
+
+    <item android:id="@android:id/progress">
+        <!-- 定义ClipDrawable的剪裁方向为垂直 -->
+        <clip
+            android:clipOrientation="vertical"
+            android:gravity="bottom">
+            <shape>
+                <!--<corners android:radius="5dip" />-->
+                <gradient
+                    android:angle="90"
+                    android:endColor="#ff747674"
+                    android:startColor="#ff747674" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

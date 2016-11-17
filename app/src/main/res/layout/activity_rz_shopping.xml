@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.ruanmeng.swipemenulistview.SwipeMenuListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        >
+    </com.ruanmeng.swipemenulistview.SwipeMenuListView>
+<View 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_qc"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="全选" />
+
+        <TextView
+            android:id="@+id/tv_jiesuan"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="合计：0.0" />
+    </LinearLayout>
+
+</LinearLayout>

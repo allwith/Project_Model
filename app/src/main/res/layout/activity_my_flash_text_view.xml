@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.ruanmeng.project_model.gitview.myflashtv.MyFlashTextView">
+
+
+    <com.ruanmeng.project_model.gitview.myflashtv.shimmer.ShimmerTextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/shimmer_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="我乃常山趙子龍！！！"
+        android:textColor="@color/myflashbg"
+        android:textSize="35dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/btn_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="点一点"/>
+
+
+    <com.ruanmeng.project_model.gitview.myflashtv.shimmer.ShimmerButton
+        android:id="@+id/btn_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="测试一下看着东西会不会闪烁"/>
+</LinearLayout>

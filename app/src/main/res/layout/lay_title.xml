@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/Title_Height"
+        android:background="@drawable/topbg_01">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/btn_back"
+            android:onClick="On_Back" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_title"
+            style="@style/Font_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             />
+
+
+        <FrameLayout
+            android:id="@+id/f_input"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:visibility="gone">
+            <!-- android:background="@drawable/input_box" -->
+            <EditText
+                android:id="@+id/et_key"
+                style="@style/Font_Nomal"
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/Padding_LR"
+                android:layout_marginRight="@dimen/Padding_LR"
+                android:background="@drawable/search_box"
+                android:hint="请输入关键字"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White"
+
+                />
+
+            <!--   android:background="@drawable/center_dd_ico_02"-->
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/search_01" />
+
+
+        </FrameLayout>
+
+
+        <Button
+            android:text=""
+            android:id="@+id/btn_wenzi"
+            style="@style/Font_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:textColor="@color/White"
+            android:visibility="gone" />
+
+
+        <!--   android:src="@drawable/dian_top_right"-->
+
+        <ImageView
+            android:id="@+id/img_fenlei"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="On_TopFenLei"
+            android:visibility="gone" />
+
+
+        <!-- android:src="@drawable/top_right" -->
+        <TextView
+            android:id="@+id/tv_dingwei"
+            style="@style/Smail_Nomal"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/Padding_LR"
+            android:text=""
+            android:textColor="@color/White" />
+
+        <!--  android:src="@drawable/top_right"-->
+        <ImageView
+            android:id="@+id/img_dingwei"
+            android:layout_width="20dp"
+
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/tv_dingwei"
+            android:visibility="gone" />
+
+
+        <!--  android:src="@drawable/add_img" -->
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="20dp"
+
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone" />
+
+
+        <!-- 选择城市 -->
+
+        <LinearLayout
+            android:id="@+id/lay_selectCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/Padding_LR"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_topcity"
+                style="@style/Font_Nomal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="城市"
+                android:textColor="@color/White" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginLeft="5dp" />
+
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frame_car"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/btn_imgcar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:id="@+id/tv_carnum"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:textSize="8sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+
+
+
+
+    </RelativeLayout>line.png
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/line"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv_null"
+        style="@style/Smail_Nomal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/Gray"
+        android:visibility="gone" />
+
+</LinearLayout>

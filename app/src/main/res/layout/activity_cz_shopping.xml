@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".shopping.ChuiZhiShoppingActivity">
+    <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        > -->
+    <!--   <com.example.shopingcar.MyListView
+                    android:id="@+id/lv_MyShoppingCar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:cacheColorHint="#00000000" >
+                </com.example.shopingcar.MyListView> -->
+    <!--  </ScrollView> -->
+    <com.ruanmeng.utils.MyNewScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ruanmeng.utils.ParentListView
+            android:id="@+id/lv_MyShoppingCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:cacheColorHint="#00000000">
+
+        </com.ruanmeng.utils.ParentListView>
+    </com.ruanmeng.utils.MyNewScrollView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_qc"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="全选" />
+
+        <TextView
+            android:id="@+id/tv_jiesuan"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="合计：0.0" />
+    </LinearLayout>
+
+</LinearLayout>

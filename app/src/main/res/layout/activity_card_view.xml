@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+        android:id="@+id/radius_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Radius"
+        android:textColor="@android:color/black"/>
+
+    <SeekBar
+        android:id="@+id/corner_radius_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:max="100"/>
+
+    <TextView
+        android:id="@+id/elevation_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Elevation"
+        android:textColor="@android:color/black"/>
+
+    <SeekBar
+        android:id="@+id/elevation_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:max="50"/>
+
+    <TextView
+        android:id="@+id/alpha_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Alpha"
+        android:textColor="@android:color/black"/>
+
+    <SeekBar
+        android:id="@+id/alpha_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="255"/>
+
+    <TextView
+        android:id="@+id/color_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Background"
+        android:textColor="@android:color/black"/>
+
+    <RadioGroup
+        android:id="@+id/select_bg_color_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/def"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/material_red"/>
+
+        <RadioButton
+            android:id="@+id/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/material_blue"/>
+    </RadioGroup>
+
+
+    <!--
+    app:cardCornerRadius=”4dp” 表示卡片的弧度.
+    app:cardElevation=”4dp” 表示阴影的深度.
+    android:foreground=”?attr/selectableItemBackground” 波纹型选中效果
+    -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        app:cardCornerRadius="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        app:cardElevation="10dp"
+        app:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/face"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/face"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/tv_card_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13611111111"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_card_nothing"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Mobile"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_launcher"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btn_text_china"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试中文类名"/>
+
+    <Button
+        android:id="@+id/btn_nohttp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MyNohttp"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btn_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recyclerview"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btn_xrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XRecyclerview"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
