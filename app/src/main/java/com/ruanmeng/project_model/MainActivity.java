@@ -282,9 +282,9 @@ public class MainActivity extends AppCompatActivity implements SpringScrollView.
                 break;
             case R.id.button38:
                 startActivity(new Intent(this, MyLoadingView.class));
+//                startActivity(new Intent(this, MyLoadViw2.class));
 //                startActivity(ScrollviewHeaderActivity.class);
                 break;
-
 
         }
     }

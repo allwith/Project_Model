@@ -29,6 +29,7 @@ public class ShapeLoadingDialog {
 
     private void init() {
         mDialog = new Dialog(mContext, R.style.custom_dialog);
+
         mDialogContentView= LayoutInflater.from(mContext).inflate(R.layout.layout_dialog,null);
 
 

@@ -20,6 +20,7 @@ import com.ruanmeng.project_model.R;
  */
 public class ShapeLoadingView extends View {
 
+
     private static final float genhao3 = 1.7320508075689f;
     private static  final  float mTriangle2Circle =0.25555555f;
 

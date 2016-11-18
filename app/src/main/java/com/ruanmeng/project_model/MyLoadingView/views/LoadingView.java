@@ -57,6 +57,7 @@ public class LoadingView extends FrameLayout {
         TypedArray typedArray = context
                 .obtainStyledAttributes(attrs, R.styleable.MyLoadingView);
         mLoadText = typedArray.getString(R.styleable.MyLoadingView_loadingText);
+//        loadingTextAppearance
         mTextAppearance = typedArray.getResourceId(R.styleable.MyLoadingView_loadingTextAppearance, -1);
 
         typedArray.recycle();
